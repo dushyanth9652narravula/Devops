@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Introduction to DevOps &#8212; My sample book</title>
+    <title>Tools Setup for Devops &#8212; My sample book</title>
   
   
   
@@ -60,10 +60,10 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Introduction';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Tools_Setup';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Tools Setup for Devops" href="Tools_Setup.html" />
+    <link rel="prev" title="Introduction to DevOps" href="Introduction.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -115,8 +115,6 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
@@ -136,7 +134,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="Introduction.html">
   
   
   
@@ -163,14 +161,14 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="Introduction.html">
                     Introduction to DevOps
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Tools_Setup.html">Tools Setup for Devops</a></li>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Tools Setup for Devops</a></li>
 </ul>
 
     </div>
@@ -247,7 +245,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FIntroduction.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FTools_Setup.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -277,7 +275,7 @@
       
       
       
-      <li><a href="_sources/Introduction.md" target="_blank"
+      <li><a href="_sources/Tools_Setup.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -353,7 +351,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Introduction to DevOps</h1>
+    <h1>Tools Setup for Devops</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -363,9 +361,8 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#software-development-life-cycle">Software Development Life Cycle</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-integration">Continuous Integration</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-delivery">Continuous Delivery</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-of-tools">Installation of Tools</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#signup-accounts">Signup Accounts</a></li>
 </ul>
             </nav>
         </div>
@@ -377,97 +374,71 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="introduction-to-devops">
-<h1>Introduction to DevOps<a class="headerlink" href="#introduction-to-devops" title="Link to this heading">#</a></h1>
-<p>Devops simply means the combination of words <b>Development</b> and <b>Operations</b> that describes the set of practices and tools that helps organizations to deliver applications and services quickly. It bridges the gap between development and operations team. The aim of the devops is to improve the collaboration between the development and operations team , increase the efficiency of software development life cycle  and ultimately produces better products. To know what does devops mean and how it is originated, first we need to learn about Software Development Life Cycle (SDLC).</p>
-<section id="software-development-life-cycle">
-<h2>Software Development Life Cycle<a class="headerlink" href="#software-development-life-cycle" title="Link to this heading">#</a></h2>
-<ul>
-<li><p>SDLC simply means the Life cycle for buidling a software product. SDLC involves 6 phases.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="tools-setup-for-devops">
+<h1>Tools Setup for Devops<a class="headerlink" href="#tools-setup-for-devops" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p>To Learn devops, we need to configure our software by installing some tools and signup for some accounts. Mainly we need to do the following 3 steps to learn devops.</p>
 <ol class="arabic simple">
-<li><p><strong>Requirement Gathering</strong> : In this phase, infromation will be collected such as product features, Users of the product, Usage of the product , User requirements and Current state of the market.</p></li>
-<li><p><strong>Planning</strong> : In this phase, business persons determines whats the budget for this project, what are the resources required to implement this project and what are the risks associated with this project.</p></li>
-<li><p><strong>Designing</strong> : In this Phase, Architects will design the software based on the inputs from previous phase and produce design documents which are basically the roadmap for the developers to build te software.</p></li>
-<li><p><strong>Development</strong> : In this phase, developers actually write the software code based on the design artifacts from design phase.</p></li>
-<li><p><strong>Testing</strong> : In this phase, testers actually test the code written by the developers and return the software code back to developers if they find any bugs in the code.</p></li>
-<li><p><strong>Deploy and Maintainance</strong> : In this phase, Operations team deploy the software tested by the tester and moniter the health of the servers to make them up all the time.</p></li>
+<li><p><strong>Installation of Tools</strong></p></li>
+<li><p><strong>Signup Accounts</strong></p></li>
+<li><p><strong>Aws Setup</strong></p></li>
 </ol>
 </li>
-<li><p>There are so many models in Software Development Life cycle. Some of those are WaterFall, Agile, Spiral, Big Bang etc. We can think these models as different patways to produce a software product. We can acesses these pathways based on cost, risks and time taken to reach the destination.</p>
-<ol class="arabic simple">
-<li><p><strong>WaterFall Model</strong> : In WaterFall model, we can move to next step only when the current step in completed or not. That means if you are in designing step currently, you can move to development step only when you have completed entire design of the project. That means waterfall model is straight forward process.</p></li>
-<li><p><strong>Agile Model</strong> : Agile model is cyclic process. In this model, all the development cycle is divided into different time frames. That means in first frame, software development team completes all these 6 steps and design the intial product. After designing the intial product, then they start adding more functionalities to that initial product. So with agile methodology, we iteratively build the end product instead of straight forward approach.</p></li>
-</ol>
-</li>
-<li><p>Now a days many software industries use agile methodology to build the software product. But there are some disadvantage with the agile methodology.</p>
-<p><strong>Disadvantages with Agile Methodology</strong> :</p>
-<ol class="arabic simple">
-<li><p>In Agile Methodology, there is no proper coordination between the development team and operations team. Because development team mainly focuses on developing  the new functionalities, where as operations team mainly focuses on the maintaining the servers up all the time, etc. So there is clear gap between the goals of both the teams.</p></li>
-<li><p>Generally operations team is responsible for deployment of all the product designed by the development team. They deploys te product based on the instructions provided by the development team. Since developers team and operations team runs on different environments, so operations team might not install some of the requirements or dependencies on their environment which prone to errors and leads to delay in deploymnet of the product which automatically delays the delivary process.</p></li>
-<li><p>In Agile methodology, everything is manual process. Most of the steps need man power. Since it requires lot of mannual work, so there might be some human errors which might delay the delivery process.</p></li>
-</ol>
-</li>
-<li><p>So to overcome the issues in the agile methodology, a new methodology was introduced which is simply called Devops. Devops simply means Development + Operations. It is set of tools which bridges the gap between the development team and operations team to improve the delivery process of the software product. Devops simply automates most the works in software development process.</p></li>
 </ul>
-</section>
-<section id="continuous-integration">
-<h2>Continuous Integration<a class="headerlink" href="#continuous-integration" title="Link to this heading">#</a></h2>
+<section id="installation-of-tools">
+<h2>Installation of Tools<a class="headerlink" href="#installation-of-tools" title="Link to this heading">#</a></h2>
 <ul>
-<li><p>Continuous integration is an automated process in devops which generates the software and its features quickly and efficiently. It is the software development practice which involves frequently mergining the code changes into the shared repository and automatically building and testing the code.</p></li>
-<li><p>The goal of CI is to improve software quality, find and fix bugs quicker and reduce the time it takes to release te new updates.</p></li>
-<li><p>In Agile, developers first write te code for the software project and psuh them into the centralized repository called Git hub repository. Then other people build and test this code and produce a software artificat by packaging the code in the form of zip, archive, MSI etc. Then this software artifacts gets deployed in the production servers. Then software testers test this code.</p></li>
-<li><p>In this entire process there are some problems which are : Developers actually write the code for the new features for three weeks and then all the written code gets builded and tested. If they got any errors while building and testing the code and then that code is sent back to the developers team to fix the bugs. Here, its irritating for the developers to fix all the bugs in the entire 3 weeks code which automatically delays the development of new features.</p></li>
-<li><p>So, to rectify this, they came to a solution which is instant build and test the code as soon as the developer pushes the code into shared repository. If you got any error while building the code then notify those errors back to the developers then they can easily fix that code.</p></li>
-<li><p>But the main, problem is building and testing the code manually for every push is difficult. So we need to automate this. To automate this process we need use the countinuos integration process.</p></li>
-<li><p>The entire continuous integration process is like Code -&gt; Fetech -&gt; Build -&gt; Test -&gt; Notify -&gt; Feedback -&gt; Code which is a cyclic process.</p></li>
-<li><p>Tools used are :</p>
+<li><p>To learn devops we need to install the following tools :</p>
 <ol class="arabic simple">
-<li><p><strong>Coding</strong> : Eclipse, Visual Studio Code, Atom, Pycharm, etc.</p></li>
-<li><p><strong>Version Control</strong> : Git, SVN, TFS, Perforce, etc.</p></li>
-<li><p><strong>Build Tools</strong> : Maven, Ant, Gradle, MS Build, Visual Build, IBM Urban Code, Make , Grunt etc.</p></li>
-<li><p><strong>Software Artifacts</strong> : SonaType Nexus, Jfrog Artifactory, Archiva, Cloudsmith Package, Grunt etc.</p></li>
-<li><p><strong>Continuous Integration Tools</strong> : Jenkins, Circleci, Teamcity, Bamboo CI, Cruise Control.</p></li>
+<li><p><strong>Oracle Vitual box</strong></p></li>
+<li><p><strong>JDK</strong></p></li>
+<li><p><strong>Git</strong></p></li>
+<li><p><strong>Maven</strong></p></li>
+<li><p><strong>Vscode</strong></p></li>
+<li><p><strong>Vagrant</strong></p></li>
+<li><p><strong>Sublime Text Editor</strong></p></li>
 </ol>
 </li>
-<li><p>So the entire process of continuous integration is :</p>
-<p><code class="docutils literal notranslate"><span class="pre">Code</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Code</span> <span class="pre">Build</span> <span class="pre">and</span> <span class="pre">Test</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Code</span> <span class="pre">Analysis</span> <span class="pre">(Finding</span> <span class="pre">Bugs</span> <span class="pre">in</span> <span class="pre">code)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Artifact</span> <span class="pre">Repo</span></code></p>
-<p><strong>Note</strong> : If any bugs are found in Code Analysis then entire code is sent back to the Developers and they need to fix it.</p>
+<li><p>So, inorder to install all these tools we need to thier offical website and ten download the installers and then we need to install manually in our system.</p></li>
+<li><p>Instead of their official websites individually, we can install of these tools by using one software which is <b>Chocolatey</b></p></li>
+<li><p><b>Chocolatey</b> is a software which is used to install other software by using command line or powershell</p></li>
+<li><p>To install Chocolatey on windows system just follow these steps :</p>
+<ol class="arabic">
+<li><p>First open the powershell in Administrator Mode.</p></li>
+<li><p>Then Run this command <code class="docutils literal notranslate"><span class="pre">Get-ExecutionPolicy</span></code>. If it returns <b>Restricted</b> then run tis command <code class="docutils literal notranslate"><span class="pre">Set-ExecutionPolicy</span> <span class="pre">AllSigned</span></code> which returns <b>AllSigned</b></p></li>
+<li><p>After you get <b>AllSigned</b> then run the following command which automatically installs chocolatey.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Set-ExecutionPolicy</span> <span class="pre">Bypass</span> <span class="pre">-Scope</span> <span class="pre">Process</span> <span class="pre">-Force;</span> <span class="pre">[System.Net.ServicePointManager]::SecurityProtocol</span> <span class="pre">=</span> <span class="pre">[System.Net.ServicePointManager]::SecurityProtocol</span> <span class="pre">-bor</span> <span class="pre">3072;</span> <span class="pre">iex</span> <span class="pre">((New-Object</span> <span class="pre">System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))</span></code></p>
+</li>
+<li><p>If you need any further assistance chaeck the following website [Chocolately] (<a class="reference external" href="https://chocolatey.org/install">https://chocolatey.org/install</a>)</p></li>
+<li><p>After installing the Chocolatey, just run <code class="docutils literal notranslate"><span class="pre">Choco</span> <span class="pre">list</span></code> which gives whether choclately is installed or not.</p></li>
+<li><p>After installing choclatey, then you need just need to run te following command in powershell to install all te required tools.</p>
+<p><strong>Virtual Box</strong> : <code class="docutils literal notranslate"><span class="pre">choco</span> <span class="pre">install</span> <span class="pre">virtualbox</span> <span class="pre">--version=7.1.4</span> <span class="pre">-y</span></code></p>
+<p><strong>Vagrant</strong> : <code class="docutils literal notranslate"><span class="pre">choco</span> <span class="pre">install</span> <span class="pre">vagrant</span> <span class="pre">--version=2.4.3</span> <span class="pre">-y</span></code></p>
+<p><strong>Git</strong> : <code class="docutils literal notranslate"><span class="pre">choco</span> <span class="pre">install</span> <span class="pre">git</span> <span class="pre">-y</span></code></p>
+<p><strong>Maven</strong> : <code class="docutils literal notranslate"><span class="pre">choco</span> <span class="pre">install</span> <span class="pre">maven</span> <span class="pre">-y</span></code></p>
+<p><strong>Correto7jdk</strong> : <code class="docutils literal notranslate"><span class="pre">choco</span> <span class="pre">install</span> <span class="pre">corretto17jdk</span> <span class="pre">-y</span></code></p>
+<p><strong>AWSCLI</strong> : <code class="docutils literal notranslate"><span class="pre">choco</span> <span class="pre">install</span> <span class="pre">awscli</span> <span class="pre">-y</span></code></p>
+<p><strong>VsCode</strong> : <code class="docutils literal notranslate"><span class="pre">choco</span> <span class="pre">install</span> <span class="pre">vscode</span> <span class="pre">-y</span></code></p>
+<p><strong>Sublime Text Editor</strong> : <code class="docutils literal notranslate"><span class="pre">choco</span> <span class="pre">install</span> <span class="pre">sublimetext3</span> <span class="pre">-y</span></code></p>
+<p><strong>Note</strong> : If you want to install any other software using chocolatey then search for that software in this website which gives <code class="docutils literal notranslate"><span class="pre">choco</span></code> command to install that software <a class="reference external" href="https://community.chocolatey.org/packages/virtualbox">Other Software Installation</a>.You may get advanced versions of these softwares at that the of your installation. So please install that advanced versions by using the above link.</p>
+</li>
+</ol>
 </li>
 </ul>
 </section>
-<section id="continuous-delivery">
-<h2>Continuous Delivery<a class="headerlink" href="#continuous-delivery" title="Link to this heading">#</a></h2>
-<ul>
-<li><p>Once we build the software artifact from the CI Process, then we need to deploy it into the servers. SInce CI is automated, Ops team get regular deploymnet requests from the Dev team which gives a additional burden to the ops team. Sometimes the artificat maynot deploy correctly on the servers because of configurations changes.</p></li>
-<li><p>Usually Deploymnet of the artifact includes :</p>
+<section id="signup-accounts">
+<h2>Signup Accounts<a class="headerlink" href="#signup-accounts" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>In order to learn devops we must need to signup these accounts.</p>
 <ol class="arabic simple">
-<li><p>Server Provisioning - Creating  the Server for that deployment.</p></li>
-<li><p>Dependencies - After Server Provisioning, we need to install all the dependencies.</p></li>
-<li><p>Configuration Changes - Then we need to configure the sever which similarly look like dev team environment.</p></li>
-<li><p>Network - Then we need to set up the firewalls and some other network settings.</p></li>
-<li><p>Artificat Deploy - Then we need to deploy the artifact that we have got from CI.</p></li>
-</ol>
-<p>And there may be some other steps also. If any of the steps might be failed then ops team might get errors. And a lot of manual work is required.</p>
-</li>
-<li><p>After code deployment then the next step is Quality and Assurance Testing. That means in this step , QA team will test the deployed product whether the features are working correctly or not. If everything works well then that code sends to production level. These are the steps involved while buiding a software product.</p></li>
-<li><p>In the deploymnet and QA steps , there are lot of manual approvals are required to procced to further steps. Any unclear instructions from previous steps might delay the delivery process. So we need to automate these steps also.</p></li>
-<li><p>To automate these steps we have many tools. Those are :</p>
-<ol class="arabic simple">
-<li><p><strong>Ansible, Puppet, Cheff</strong> - These tools are for system automation such as server provisioning and configuring the server etc.</p></li>
-<li><p><strong>Terraform, Cloud Formation</strong> - These are for cloud automation.</p></li>
-<li><p><strong>Jenkins, Octopus Deploy</strong> - These are for CI/CD automation.</p></li>
-<li><p><strong>HELM CHARTS</strong></p></li>
-<li><p><strong>Code Deploy</strong></p></li>
+<li><p><a class="reference external" href="https://github.com/">GitHub</a></p></li>
+<li><p><a class="reference external" href="https://hub.docker.com/">DockerHub</a></p></li>
+<li><p><a class="reference external" href="https://sonarcloud.io">SonarCloud</a></p></li>
 </ol>
 </li>
-<li><p>So now Ops team write the automation code for deploymnet and QA team automation code for testing the deployed product and then they synchronize it with the CI Process which automates entire procees of Software Development Life Cycle.</p></li>
-<li><p><b>Continuous Delivery</b> is the process of automating the build, test, configuration, and deployment from the build to the production environment.</p></li>
-<li><p>The main aim of the Continuous Delivery is Speed up te deployment, Reduce costs, Lowe Risks and Maintain Code quality.</p></li>
+<li><p>Just create account in all these 3 websites. Create account in SonarCloud using github account.</p></li>
 </ul>
-<p><b>This is what Devops Means which bidges the gap between the Dev and Ops team by automating the entire Software Development Life Cylce.</b></p>
 </section>
-<div class="toctree-wrapper compound">
-</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -500,14 +471,14 @@
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="right-next"
-       href="Tools_Setup.html"
-       title="next page">
+    <a class="left-prev"
+       href="Introduction.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Tools Setup for Devops</p>
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Introduction to DevOps</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -526,9 +497,8 @@
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#software-development-life-cycle">Software Development Life Cycle</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-integration">Continuous Integration</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-delivery">Continuous Delivery</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-of-tools">Installation of Tools</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#signup-accounts">Signup Accounts</a></li>
 </ul>
   </nav></div>
 
