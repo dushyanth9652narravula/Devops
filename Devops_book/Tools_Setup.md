@@ -17,6 +17,7 @@
   5) **Vscode**
   6) **Vagrant**
   7) **Sublime Text Editor**
+  
 
 - So, inorder to install all these tools we need to thier offical website and ten download the installers and then we need to install manually in our system.
 
@@ -34,7 +35,7 @@
 
      `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))`
 
-  4) If you need any further assistance chaeck the following website [Chocolately] (https://chocolatey.org/install)
+  4) If you need any further assistance chaeck the following website [Chocolately](https://chocolatey.org/install)
 
   5) After installing the Chocolatey, just run `Choco list` which gives whether choclately is installed or not.
 
@@ -56,7 +57,7 @@
 
      **Sublime Text Editor** : `choco install sublimetext3 -y`
 
-     **Note** : If you want to install any other software using chocolatey then search for that software in this website which gives `choco` command to install that software [Other Software Installation](https://community.chocolatey.org/packages/virtualbox).You may get advanced versions of these softwares at that the of your installation. So please install that advanced versions by using the above link.
+     **Note** : If you want to install any other software using chocolatey then search for that software in this website which gives `choco` command to install that software [Other Software Installation](https://community.chocolatey.org/packages). You may get advanced versions of these softwares at that the of your installation. So please install that advanced versions by using the above link.
 
 ## Signup Accounts
 
