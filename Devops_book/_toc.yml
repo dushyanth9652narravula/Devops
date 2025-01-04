@@ -5,3 +5,4 @@ format: jb-book
 root: Introduction
 chapters:
 - file: Tools_Setup
+- file: Virtualization_And_VM_Setup

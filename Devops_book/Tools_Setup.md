@@ -1,4 +1,4 @@
-# Tools Setup for Devops 
+# Tools Setup for Devops
 
 - To Learn devops, we need to configure our software by installing some tools and signup for some accounts. Mainly we need to do the following 3 steps to learn devops.
 
