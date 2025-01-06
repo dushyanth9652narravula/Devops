@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Virtualization and VM Setup &#8212; My sample book</title>
+    <title>Vim Editor in Linux &#8212; My sample book</title>
   
   
   
@@ -60,11 +60,10 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Virtualization_And_VM_Setup';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Vim_Editor';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Intro to Linux" href="Linux.html" />
-    <link rel="prev" title="Tools Setup for Devops" href="Tools_Setup.html" />
+    <link rel="prev" title="Basic Commands Of Linux" href="Basic_Commands_Of_Linux.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -170,10 +169,10 @@
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Tools_Setup.html">Tools Setup for Devops</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Virtualization and VM Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Virtualization_And_VM_Setup.html">Virtualization and VM Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Linux.html">Intro to Linux</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Basic_Commands_Of_Linux.html">Basic Commands Of Linux</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Vim_Editor.html">Vim Editor in Linux</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Vim Editor in Linux</a></li>
 </ul>
 
     </div>
@@ -250,7 +249,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FVirtualization_And_VM_Setup.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FVim_Editor.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -280,7 +279,7 @@
       
       
       
-      <li><a href="_sources/Virtualization_And_VM_Setup.md" target="_blank"
+      <li><a href="_sources/Vim_Editor.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -356,7 +355,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Virtualization and VM Setup</h1>
+    <h1>Vim Editor in Linux</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -366,8 +365,8 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#virtualization">Virtualization</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vm-setup">VM Setup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modes-of-vim-editor">Modes of Vim Editor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#some-more-operations-that-you-can-perform-on-vim-editor">Some more operations that you can perform on Vim Editor</a></li>
 </ul>
             </nav>
         </div>
@@ -379,66 +378,63 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="virtualization-and-vm-setup">
-<h1>Virtualization and VM Setup<a class="headerlink" href="#virtualization-and-vm-setup" title="Link to this heading">#</a></h1>
-<section id="virtualization">
-<h2>Virtualization<a class="headerlink" href="#virtualization" title="Link to this heading">#</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="vim-editor-in-linux">
+<h1>Vim Editor in Linux<a class="headerlink" href="#vim-editor-in-linux" title="Link to this heading">#</a></h1>
 <ul>
-<li><p>Virtualization is a technology which creates the virtual representations of the servers, storages, networks and other physical machines. It simulates the computing environment by dividing the physical resources into virtual machines, operating systems and other components.</p></li>
-<li><p>The Traditional way of doing business is having one server for one application. Suppose consider an example below.</p>
-<p><strong>Ex</strong> :</p>
+<li><p>Generally Vim Editor is used to edit the files present in the linux system. By default Ubuntu Linux distros have Vim Editor installed on it. But centos Os doesn’t have Vim editor installed on it. To install vim editor in centos we need to use te following syntax :</p>
+<p><strong>Syntax</strong> : <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">yum</span> <span class="pre">install</span> <span class="pre">vim</span> <span class="pre">-y</span></code></p>
+</li>
+<li><p>To open a file in Vim Editor then we use the following syntax.</p>
+<p><strong>Syntax</strong> : <code class="docutils literal notranslate"><span class="pre">vim</span> <span class="pre">&lt;filename&gt;</span></code></p>
+<p><strong>Ex</strong> : <code class="docutils literal notranslate"><span class="pre">vim</span> <span class="pre">testfile1.txt</span></code></p>
+</li>
+</ul>
+<section id="modes-of-vim-editor">
+<h2>Modes of Vim Editor<a class="headerlink" href="#modes-of-vim-editor" title="Link to this heading">#</a></h2>
+<ul>
+<li><p>Vim editor has 3 modes. Those are :</p>
 <ol class="arabic simple">
-<li><p>Consider a businees runs three servers, where first servers serves an email service which uses Windows operating System and second server serves Web application which uses linux operating system and 3rd application serves database application which uses Unix operating system.</p></li>
-<li><p>Instead of Running all these three applications in three different servers, what if we have run all these applications runs in single server even run their different operating systems. This is what virtualization does.</p></li>
-<li><p>Virtualization basically divides the physical components of single server into three virtual machines where each virtual machine runs different operating system along with different services such as email, web and database.</p></li>
+<li><p>Command Mode</p></li>
+<li><p>Insert Mode</p></li>
+<li><p>Extended Command mode.</p></li>
 </ol>
 </li>
-<li><p>The software the enables virtualization is called <b>Hypervisor</b>. It allocates and controls the physical resources such as Storage Space, RAM etc., to each vitual machine.</p></li>
-<li><p>There are actually two types of virtual machines. Type - I and Type - II</p>
-<p><strong>Type - I</strong> : Type - I hypervisors are simply installed on top of the bare metal. Bare Metal means there is no existing operating system installed on top of physical resources such as RAM, ROM and Mother Board. Here there is no Operating System between physical machine and Hypervisor. These type of hypervisors are used for production level only.</p>
-<p><strong>Example For Type - I</strong> : VMware ESXI, Critix XenServer, Microsoft Hyper -V.</p>
-<p><strong>Type - II</strong> : Type - II hypervisors are installed on top of existing operating system. That means there is an operating system in between the Hypervisor and Physical Machine. These hypervisors are used for personal computers to test new softwares or try different operating systems.</p>
-<p><strong>Examples For Type - II</strong> : Oracle VM VirtualBox, Microsoft Virtual PC, VMware Workstation.</p>
-</li>
-<li><p>There are actually so many benifits of virtualization technology. Those are :</p>
+<li><p>When you run <code class="docutils literal notranslate"><span class="pre">vim</span> <span class="pre">testfile1.txt</span></code> then it will open that file in command mode initially. When you are in command move you cannot do anything. If you want to write something in that file then you have move into insert mode. To move into insert mode you just press <code class="docutils literal notranslate"><span class="pre">i</span></code> in the keyboard. Then You can see <code class="docutils literal notranslate"><span class="pre">--INSERT--</span></code> at the bottom of the file which indicates you are in insert mode, now you can start write anything in that file. Once you have written whatever you want in that file then click <code class="docutils literal notranslate"><span class="pre">esc</span></code> button in the keyboard which take back you to command mode. Now to move to extended command mode then you to press colon (<code class="docutils literal notranslate"><span class="pre">:</span></code>) on the keyboard. Now a colon (<code class="docutils literal notranslate"><span class="pre">:</span></code>) is displayed at the bottom of the file which indicates you are in extended command mode. Extended command mode is generally used to save and quit from the file.</p></li>
+<li><p>We have some operations which we can perform in extended command mode. Those are :</p>
 <ol class="arabic simple">
-<li><p>It saves Money on hardware and electricity. By using virtualization we doesn’t need more servers which automatically reduces the cost on hardware and also decreases the power consumption by a server.</p></li>
-<li><p>It saves Money on floor space. Virtualization can reduce the usage of physical servers which reduces the cost on floor space.</p></li>
-<li><p>Similary it also reduces the money  for maintainance and management of the servers as we require system admininstrators to maintain the health of the servers.</p></li>
-<li><p>Virtual Machines are portable. Since these are just software files, so we can easily transfer them from one machine to another machine.</p></li>
-<li><p>Through virtualization technology, we can use complete resources of the server which gives full computing capability.</p></li>
-<li><p>Virtualization easily resuces the servers from disasters. Since VM are software files we can easily store them in other Servers, So that we can recover them whenever a server fails.</p></li>
+<li><p><strong>Esc+ :w</strong> : This is used to save the changes.</p></li>
+<li><p><strong>Esc+ :q</strong> : This is used to quit from the file.</p></li>
+<li><p><strong>Esc+ :wq</strong> : To save and quit.</p></li>
+<li><p><strong>Esc+ :w!</strong> : To save forcefully.</p></li>
+<li><p><strong>Esc+ :q!</strong> : To quit forcefully.</p></li>
+<li><p><strong>Esc+ :wq!</strong> : To save and quit forcefully.</p></li>
+<li><p><strong>Esc+ :se nu</strong> : To set line numbers in the file.</p></li>
+<li><p><strong>Esc+ :set nonu</strong> : To remove the set line numbers in the file.</p></li>
+<li><p><strong>Esc+ :x</strong> : To save and quit the file.</p></li>
+<li><p><strong>Esc+ :x!</strong> : To save and quit the file forcefully.</p></li>
 </ol>
+<p><strong>Note</strong> : Actually we will be in extended command mode only after we click <code class="docutils literal notranslate"><span class="pre">Esc+</span> <span class="pre">:</span></code>. So from above you just use those symbols after colon to do respective tasks. But for full syntax i have written like that.</p>
 </li>
 </ul>
 </section>
-<section id="vm-setup">
-<h2>VM Setup<a class="headerlink" href="#vm-setup" title="Link to this heading">#</a></h2>
-<ul>
-<li><p>We can setup the Virtual Machine both Manually and Automatically. But there are some issues if you want to setup the VM Manually. The Issues are :</p>
-<ol class="arabic simple">
-<li><p>First we need to install the os seperately by downloading the iso file of that OS which is a manual task.</p></li>
-<li><p>It takes so much time to setup the Virtual Machine manually. Since you need to follow so many steps for stting up te virtual machine.</p></li>
-<li><p>Since it is the manual process then there might be so many human errors.</p></li>
-<li><p>If you want to replicate same VM then we need to follow the entire process to setup which is time taking process. So it is tough to replicate mutiple VMs</p></li>
-<li><p>Since it involves lot of steps then a proper documentation is required for setup the VM.</p></li>
-<li><p>If you unfortunatley delete the VM then we cannot recover it back and it takes lot of time to create same VM. So disaster recoveray is difficult.</p></li>
-</ol>
-</li>
-<li><p>To overcome these issues, we can automatically set the VM by just using the few commands. In order to setup VM automatically, we are using a software called <b>Vagrant</b>.</p></li>
-<li><p><b>Vagrant</b> is an open source software which is used to provision the development environments quickly. It create the virtual Machines by just running the few vagrant commands.</p></li>
-<li><p>Vagrant doesn’t need any Os installation because vargrant provides free VM images (which are called boxes) available in Vagrant Cloud. All the changes we need to install in VM is managed by the single file called Vagrant File. By using the vagrantfile only we actually create virtual machines.</p></li>
-<li><p>Vargrant provides simple command to provision virutal machine. Those are :</p>
-<p><strong>vagrant init <boxname></strong> : It creates the vagrant file in our local directly which includes all the settings of the box or VM image.</p>
-<p><strong>vagrant up</strong> : It creates the VM machine in the Virtual Box.</p>
-<p><strong>vagrant status</strong> : It gives the status of all the VMs present in the Virtual Box.</p>
-<p><strong>vagrant halt</strong> : It shutdown or poweroff the current running Virtual Machine.</p>
-<p><strong>vagrant destroy</strong> : It actually deletes the virtual machine from the virtual box.</p>
-<p><strong>vagrant global-status</strong> : It gives te status of all the VMs presenting in the Virtual Box.</p>
-<p><strong>vagrant box list</strong> : It gives all VMs present in the Virtual Box.</p>
-<p><strong>vagrant ssh</strong> : It is used to login into the virtual machine that is currently running.</p>
-</li>
-<li><p><strong>Working of Vagrant</strong> : Once we run <code class="docutils literal notranslate"><span class="pre">vagrant</span> <span class="pre">init</span> <span class="pre">boxname</span></code> then vagrant fetches the vagrant file of that image from the vagrant cloud and places it in the current directory. When you run <code class="docutils literal notranslate"><span class="pre">vagrant</span> <span class="pre">up</span></code> then we vargrant actually looks for the image/box of that VM in the local directory, if it is not found in the local directory then it actually download that VM from the vagrant cloud and then it creates the VM in the virtual box by effectively communicating with the hypervisor. After this we can perform anything on that virtual machine by using the above commands. This is actually procees being run in the background.</p></li>
+<section id="some-more-operations-that-you-can-perform-on-vim-editor">
+<h2>Some more operations that you can perform on Vim Editor<a class="headerlink" href="#some-more-operations-that-you-can-perform-on-vim-editor" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>gg</strong> : To go to begining of the page.</p></li>
+<li><p><strong>G</strong> : To go to end of the page. (In windows for Capital G use <code class="docutils literal notranslate"><span class="pre">Shift+g</span></code>)</p></li>
+<li><p><strong>w</strong> : To move the cursor forward, word by word.</p></li>
+<li><p><strong>b</strong> : To move the cursor backword, word by word.</p></li>
+<li><p><strong>nw</strong> : To move cursor forward to n words . Ex : click <code class="docutils literal notranslate"><span class="pre">2+w</span></code> for moving 2 words forward.</p></li>
+<li><p><strong>nb</strong> : To move cursor backword to n words.</p></li>
+<li><p><strong>u</strong> : To undo the last change (it will do in word level only.)</p></li>
+<li><p><strong>U</strong> : To undo the previous changes (It will undo entire line).</p></li>
+<li><p><strong>yy</strong> : To copy a line where cursor is pointed out.</p></li>
+<li><p><strong>nyy</strong> : To copy n line from the current line. Ex : 4yy which copies 4 lines from the current line where cursor is pointed now.</p></li>
+<li><p><strong>p</strong> : To paste line below the cursor position.</p></li>
+<li><p><strong>P</strong> : To paste the line above the cursor position.</p></li>
+<li><p><strong>dd</strong> : To delete the entire line. It actually cuts the line where cursor is pointed out, so that you can paste wherever you want it.If you want to delete that line then just don’t paste it once you deleted.</p></li>
+<li><p><strong>ndd</strong> : To delete n no of line from cursor position.</p></li>
+<li><p><strong>/</strong> : Search a word in the file.</p></li>
 </ul>
 </section>
 </section>
@@ -474,22 +470,13 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Tools_Setup.html"
+       href="Basic_Commands_Of_Linux.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Tools Setup for Devops</p>
+        <p class="prev-next-title">Basic Commands Of Linux</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="Linux.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Intro to Linux</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -508,8 +495,8 @@
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#virtualization">Virtualization</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vm-setup">VM Setup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modes-of-vim-editor">Modes of Vim Editor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#some-more-operations-that-you-can-perform-on-vim-editor">Some more operations that you can perform on Vim Editor</a></li>
 </ul>
   </nav></div>
 

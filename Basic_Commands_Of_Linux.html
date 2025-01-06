@@ -1,0 +1,562 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Basic Commands Of Linux &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Basic_Commands_Of_Linux';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Vim Editor in Linux" href="Vim_Editor.html" />
+    <link rel="prev" title="Intro to Linux" href="Linux.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="Introduction.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="My sample book - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="Introduction.html">
+                    Introduction to DevOps
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Tools_Setup.html">Tools Setup for Devops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Virtualization_And_VM_Setup.html">Virtualization and VM Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Linux.html">Intro to Linux</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Basic Commands Of Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Vim_Editor.html">Vim Editor in Linux</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FBasic_Commands_Of_Linux.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Basic_Commands_Of_Linux.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Basic Commands Of Linux</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#some-file-commands">Some File Commands</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="basic-commands-of-linux">
+<h1>Basic Commands Of Linux<a class="headerlink" href="#basic-commands-of-linux" title="Link to this heading">#</a></h1>
+<ul>
+<li><p>There are actually 4 basic commands in linux. Those are :</p>
+<p><strong>whoami</strong> : <code class="docutils literal notranslate"><span class="pre">whoami</span></code> command is used to find who is the present user login in.</p>
+<p><strong>pwd</strong> : <code class="docutils literal notranslate"><span class="pre">pwd</span></code> command is used to find the present working directory.</p>
+<p><strong>ls</strong> : <code class="docutils literal notranslate"><span class="pre">ls</span></code> command is to list all the files and directories present in the current directory.</p>
+<p><strong>cat</strong> : <code class="docutils literal notranslate"><span class="pre">cat</span></code> command is to read the contents of the file.</p>
+<p><b>Ex</b>: <code class="docutils literal notranslate"><span class="pre">Cat</span> <span class="pre">&lt;filename&gt;</span></code>  or <code class="docutils literal notranslate"><span class="pre">cat</span> <span class="pre">&lt;absolute</span> <span class="pre">path</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">file&gt;</span></code></p>
+<p><strong>cd</strong> : <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">&lt;path&gt;</span></code> command is used to change the directory .</p>
+</li>
+<li><p>If you look at the prompt in shell, then we can see  <code class="docutils literal notranslate"><span class="pre">[vagrant&#64;vbox</span> <span class="pre">~]$</span></code> which indicates <code class="docutils literal notranslate"><span class="pre">vagrant</span></code> is the username, <code class="docutils literal notranslate"><span class="pre">vbox</span></code> is the localhost name and <code class="docutils literal notranslate"><span class="pre">$</span></code> indicates normal User shell and <code class="docutils literal notranslate"><span class="pre">~</span></code> symbol represents that you are in the home directory of vagrant user.</p></li>
+<li><p>If you log in to the root user by using the command <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">-i</span></code>, then you can see te prompt like this <code class="docutils literal notranslate"><span class="pre">[root&#64;vbox</span> <span class="pre">~]#</span></code> where <code class="docutils literal notranslate"><span class="pre">root</span></code> indicates root user, <code class="docutils literal notranslate"><span class="pre">vbox</span></code> indicates the localhsot name and <code class="docutils literal notranslate"><span class="pre">#</span></code> indicates the root user shell and <code class="docutils literal notranslate"><span class="pre">~</span></code> symbol represents that you are in the home directory of root.</p></li>
+<li><p>Directory structure of the linux is :</p>
+<ol class="arabic simple">
+<li><p><strong>Root Directory</strong> - <code class="docutils literal notranslate"><span class="pre">/</span></code> : This is the top most directory in the hierarcy. It is called as root directory. It contains all other directories and files in the system.</p></li>
+<li><p><strong>Home Directories</strong> : <code class="docutils literal notranslate"><span class="pre">/home</span></code> directory contains all the users present in that operating system except root user. <code class="docutils literal notranslate"><span class="pre">/home/username</span></code> contains all the personal directories of that user. <code class="docutils literal notranslate"><span class="pre">/root</span></code> has all the directories of the root user. If you move to any other directory using <code class="docutils literal notranslate"><span class="pre">cd</span></code> command then to get into home directory you need to use <code class="docutils literal notranslate"><span class="pre">cd</span></code> and hit enter which will take you to home directory of that user</p></li>
+<li><p><strong>User Executable</strong> : User executable directories are <code class="docutils literal notranslate"><span class="pre">/bin</span></code>, <code class="docutils literal notranslate"><span class="pre">/usr/bin</span></code>, <code class="docutils literal notranslate"><span class="pre">/usr/local/bin</span></code>. These contains essential executable programs such as <code class="docutils literal notranslate"><span class="pre">ls</span></code>, <code class="docutils literal notranslate"><span class="pre">cp</span></code>,<code class="docutils literal notranslate"><span class="pre">mv</span></code> needed for the system boot and for basic operation.</p></li>
+<li><p><strong>System Executables</strong> : System Executable directories are <code class="docutils literal notranslate"><span class="pre">/sbin</span></code>, <code class="docutils literal notranslate"><span class="pre">/use/sbin</span></code>, <code class="docutils literal notranslate"><span class="pre">/usr/local/sbin</span></code>. These directories contains the system administration binaries such as <code class="docutils literal notranslate"><span class="pre">fsck</span></code>, <code class="docutils literal notranslate"><span class="pre">reboot</span></code>.</p></li>
+<li><p><strong>Other Mountpoints</strong> : Mountpoints directories are <code class="docutils literal notranslate"><span class="pre">/mnt</span></code>, <code class="docutils literal notranslate"><span class="pre">/media</span></code>. <code class="docutils literal notranslate"><span class="pre">/mnt</span></code> contains the temporary mount points for the devices such as USB drives or external devices. <code class="docutils literal notranslate"><span class="pre">/media</span></code> autmoatically mounts the removable media.</p></li>
+<li><p><strong>Configuration</strong> : <code class="docutils literal notranslate"><span class="pre">/etc</span></code> is the configuration directory in the linux. It contains the system-wide configuration files eg. <code class="docutils literal notranslate"><span class="pre">/etc/passwd</span></code>, <code class="docutils literal notranslate"><span class="pre">/etc/hosts</span></code> .</p></li>
+<li><p><strong>Temporary Files</strong> : <code class="docutils literal notranslate"><span class="pre">/tmp</span></code> is used for the temporary file storage. These files are often removed when we  reboot.</p></li>
+<li><p><strong>Kernals and Bootloader</strong> : <code class="docutils literal notranslate"><span class="pre">/boot</span></code> holds the files needed for the booting of the system. E.g kernal files, GRUB configurations.</p></li>
+<li><p><strong>Server Data</strong> : <code class="docutils literal notranslate"><span class="pre">/var</span></code> and <code class="docutils literal notranslate"><span class="pre">/srv</span></code> contains the server data. <code class="docutils literal notranslate"><span class="pre">/var</span></code> contains the information that changes frequently, such as logs (<code class="docutils literal notranslate"><span class="pre">/var/log</span></code>), mail, and temporary files. <code class="docutils literal notranslate"><span class="pre">/srv</span></code> contains the data for system services, like web server files for hosting.</p></li>
+<li><p><strong>System Information</strong> : <code class="docutils literal notranslate"><span class="pre">/proc</span></code> and <code class="docutils literal notranslate"><span class="pre">/sys</span></code> contains the system information.</p></li>
+<li><p><strong>Shared Libraries</strong> : <code class="docutils literal notranslate"><span class="pre">/lib</span></code>, <code class="docutils literal notranslate"><span class="pre">/usr/lib</span></code>, <code class="docutils literal notranslate"><span class="pre">/usr/local/lib</span></code> are the shared libraries for root and users.</p></li>
+</ol>
+</li>
+<li><p>From the diretory structure of linux, we can understand that every command that we are running is a file, everything is a file in linux. And all that files are text files which made it easy to configure settings of the system with just making few changes in that text file. In other operating systems, we need to go to settings tab and go to some other tabs in that settings tab to change the configurations.</p></li>
+</ul>
+<section id="some-file-commands">
+<h2>Some File Commands<a class="headerlink" href="#some-file-commands" title="Link to this heading">#</a></h2>
+<ul>
+<li><p>Before going to see the some File command let us know syntax of linux. The syntax of the linux is :</p>
+<p><code class="docutils literal notranslate"><span class="pre">command</span>&#160; <span class="pre">options</span> <span class="pre">arguments</span></code></p>
+<p><strong>Ex</strong> : <code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">-l</span> <span class="pre">/home/vagrant</span></code> -&gt; It going to display all the files present in vagrant user in the long list format which includes permisions to tat file , when it was created etc. Here command is <code class="docutils literal notranslate"><span class="pre">ls</span></code>, options are <code class="docutils literal notranslate"><span class="pre">-l</span></code> and the arguments are file path <code class="docutils literal notranslate"><span class="pre">/home/vagrant</span></code></p>
+</li>
+<li><p>File commands are :</p>
+<ol class="arabic">
+<li><p><strong>mkdir</strong> : <code class="docutils literal notranslate"><span class="pre">mkdir</span></code> command to used to make or create a directory. The syntax is <code class="docutils literal notranslate"><span class="pre">mkdir</span> <span class="pre">&lt;directory</span> <span class="pre">name&gt;</span></code>.</p>
+<p><strong>Ex</strong> : <code class="docutils literal notranslate"><span class="pre">mkdir</span> <span class="pre">dev</span></code>  -&gt; it create the dev directory in the present directory. If you want to create mutiple directories at a time then you can use this <code class="docutils literal notranslate"><span class="pre">mkdir</span> <span class="pre">ops</span> <span class="pre">backupdir</span></code>. To create mutiple directories you just need to pass the directory names as arguments.</p>
+</li>
+<li><p><strong>touch</strong> : <code class="docutils literal notranslate"><span class="pre">touch</span></code> command to used to create files in te linux. The syntax is <code class="docutils literal notranslate"><span class="pre">touch</span> <span class="pre">&lt;file</span> <span class="pre">name&gt;</span></code>.</p>
+<p><strong>Ex</strong> : <code class="docutils literal notranslate"><span class="pre">touch</span> <span class="pre">testfile1.txt</span></code> -&gt; It creates the testfile1.txt in the current directory. If you want to create file in any other directory then you need to use absolute path as argument instead of relative path. i.e <code class="docutils literal notranslate"><span class="pre">touch</span> <span class="pre">/home/vagrant/testfile1.txt</span></code>. If you want to create multiple files with same name but numbering is different then you need to use the following syntax. <code class="docutils literal notranslate"><span class="pre">touch</span> <span class="pre">testfile{1..10}.txt</span></code></p>
+</li>
+<li><p><strong>cp</strong> : <code class="docutils literal notranslate"><span class="pre">cp</span></code> command is used to copy files  to the given directory. The syntax is <code class="docutils literal notranslate"><span class="pre">cp</span> <span class="pre">&lt;path1&gt;</span> <span class="pre">&lt;path2&gt;</span></code>.</p>
+<p><strong>Ex</strong> : <code class="docutils literal notranslate"><span class="pre">cp</span> <span class="pre">testfile1.txt</span> <span class="pre">dev</span></code> -&gt; It copies testfile1.txt to the dev directory. If you want to copy a directory to another directory then you need to use option <code class="docutils literal notranslate"><span class="pre">-r</span></code>. So syntax is <code class="docutils literal notranslate"><span class="pre">cp</span> <span class="pre">-r</span> <span class="pre">dev</span> <span class="pre">ops</span></code> -&gt; it copies dev directory to ops directory. <code class="docutils literal notranslate"><span class="pre">cp</span></code> command is used to copy contents from one file to another file also.</p>
+</li>
+<li><p><strong>mv</strong> : <code class="docutils literal notranslate"><span class="pre">mv</span></code> command is used to move one file or directory to another directory. The syntax is <code class="docutils literal notranslate"><span class="pre">mv</span> <span class="pre">&lt;path1&gt;</span> <span class="pre">&lt;path2&gt;</span></code>.</p>
+<p><strong>Ex</strong> : <code class="docutils literal notranslate"><span class="pre">mv</span> <span class="pre">dev</span> <span class="pre">backupdir</span></code> -&gt; It moves dev directory to backupdir. <code class="docutils literal notranslate"><span class="pre">mv</span></code> command can be used to rename a file or directory. But the file with that new name should not exist in that directory. If that new name exists then it will do move operation instead of rename operation. <code class="docutils literal notranslate"><span class="pre">mv</span> <span class="pre">ops</span> <span class="pre">operations</span></code> -&gt; It renames ops directory to operations directory.</p>
+</li>
+<li><p><strong>rm</strong> : <code class="docutils literal notranslate"><span class="pre">rm</span></code> command is used to remove the files and directories in linux. The syntax is <code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">&lt;file</span> <span class="pre">or</span> <span class="pre">directory</span> <span class="pre">name&gt;</span></code> .</p>
+<p><strong>Ex</strong> : <code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">testfile1.txt</span></code> -&gt; it removes testfile1.txt from the current directory. If you want to remove the entire directory ten you need to use option <code class="docutils literal notranslate"><span class="pre">-r</span></code>. <code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">-r</span> <span class="pre">dev</span></code> which remove entire dev directory. If you want to all the files or directories in the current directory then we need to <code class="docutils literal notranslate"><span class="pre">*</span></code> symbol. <code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">-r</span> <span class="pre">*</span></code> -&gt; removes all the files and directories presnt in the current directory. But beware while using <code class="docutils literal notranslate"><span class="pre">*</span></code> it will remove all the files or directories present in the current directory.</p>
+</li>
+</ol>
+</li>
+<li><p><strong>Note</strong> : If you want any help regarding the commnad then we can use <code class="docutils literal notranslate"><span class="pre">--help</span></code> option. For example <code class="docutils literal notranslate"><span class="pre">cp</span> <span class="pre">--help</span></code> gives all te documentation of the <code class="docutils literal notranslate"><span class="pre">cp</span></code> command. Here we can observe in linux we use single hypen <code class="docutils literal notranslate"><span class="pre">-</span></code> for single word options and double hypen <code class="docutils literal notranslate"><span class="pre">--</span></code> for multi word options.</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Linux.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Intro to Linux</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Vim_Editor.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Vim Editor in Linux</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#some-file-commands">Some File Commands</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
