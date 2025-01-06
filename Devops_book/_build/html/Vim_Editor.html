@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Intro to Linux &#8212; My sample book</title>
+    <title>Vim Editor in Linux &#8212; My sample book</title>
   
   
   
@@ -60,11 +60,10 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Linux';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Vim_Editor';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Basic Commands Of Linux" href="Basic_Commands_Of_Linux.html" />
-    <link rel="prev" title="Virtualization and VM Setup" href="Virtualization_And_VM_Setup.html" />
+    <link rel="prev" title="Basic Commands Of Linux" href="Basic_Commands_Of_Linux.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -171,9 +170,9 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Tools_Setup.html">Tools Setup for Devops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Virtualization_And_VM_Setup.html">Virtualization and VM Setup</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Intro to Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Linux.html">Intro to Linux</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Basic_Commands_Of_Linux.html">Basic Commands Of Linux</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Vim_Editor.html">Vim Editor in Linux</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Vim Editor in Linux</a></li>
 </ul>
 
     </div>
@@ -250,7 +249,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FLinux.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FVim_Editor.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -280,7 +279,7 @@
       
       
       
-      <li><a href="_sources/Linux.md" target="_blank"
+      <li><a href="_sources/Vim_Editor.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -356,7 +355,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Intro to Linux</h1>
+    <h1>Vim Editor in Linux</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -366,11 +365,8 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#history-of-linux">History of Linux</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#architecture-of-linux">Architecture of Linux :</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#core-linux-principles">Core Linux Principles</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#advantages-of-linux">Advantages of Linux</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#different-linux-distributions">Different Linux Distributions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modes-of-vim-editor">Modes of Vim Editor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#some-more-operations-that-you-can-perform-on-vim-editor">Some more operations that you can perform on Vim Editor</a></li>
 </ul>
             </nav>
         </div>
@@ -382,139 +378,63 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="intro-to-linux">
-<h1>Intro to Linux<a class="headerlink" href="#intro-to-linux" title="Link to this heading">#</a></h1>
-<p>Linux is an Open-Source Unix based Operating-System based family on the linux kernal, and the OS Kernal was first published on 17th September 1991 by <b>Linus Torvalds</b>. Typically, Linux is packaged as Linux distribution, which contains te supporting libraries, system software and Linux kernal, several of which are offered by GNU Project. Several Linux distributions use the term “Linux” in the title, but the Free Software Foundation uses the “GNU/Linux” title to focus on the necessity of GNU software, causing a few controversies. Famous Linux distribution are RPM, Debian etc.</p>
-<section id="history-of-linux">
-<h2>History of Linux<a class="headerlink" href="#history-of-linux" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Early computers are enormous, with each having its own unique operating system, making operation difficult and software incompatible. They were expensive and inaccessible to the general public.</p></li>
-<li><p>So to overcome this issue, Bell labs developed Unix in 1969, a simpler and more efficient operating system using C launguage instead of assembly language. Unix was modular, with a recyclable ‘Kernal’ and it source code was open.</p></li>
-<li><p>Initially, Unix was adopted by large organizations like governament bodies, universities, and financial institutions, which used mainframes and minicomputers.</p></li>
-<li><p>During the 1980s, companies like IBM and HP created their own Unix versions, leading to fragmentation. Then in 1983, Richard Stallman developed GNU project with the goal to make it freely available Unix like operating system by creating General Public License. GNU stands for <b> GNU’s Not Unix </b>. The GNU General Public License (GPL) ensured that software remained free to use, modify, and distribute. By late 1980’s many components of GNU were ready, but the kernal (core of the operating system) was incomplete.</p></li>
-<li><p>In 1991 Linus Torvalds, a Finnish student, created the Linux kernel as a free Unix alternative for personal use. Initially named “Freax,” it became “Linux.” He used the GNU C compiler and initially restricted commercial use. In 1992, Torvalds released the Linux kernel under the GNU General Public License, integrating GNU tools and making it free and open-source.</p></li>
-<li><p>Today Linux is simply -&gt; Linux kernal + GNU Utilities. Linux is the kernel, one of the essential major components of the system. The system as a whole is basically the GNU system, with Linux added. When you’re talking about this combination, please call it “GNU/Linux.”</p></li>
-</ul>
-</section>
-<section id="architecture-of-linux">
-<h2>Architecture of Linux :<a class="headerlink" href="#architecture-of-linux" title="Link to this heading">#</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="vim-editor-in-linux">
+<h1>Vim Editor in Linux<a class="headerlink" href="#vim-editor-in-linux" title="Link to this heading">#</a></h1>
 <ul>
-<li><p>Linux is majorly consists of 4 layers. Those are :</p>
-<p><strong>Hardware Layer</strong> : This layer consists of hardware components of the system which are CPU, RAM, ROM, Mother Board etc.</p>
-<p><strong>Kernal</strong> : On top of hardware components linux kernal is located. This Linux Kernal is the intermediatary between User and Hardware. It actually manages the system resources such as CPU, Memory and I/O devices.</p>
-<p><strong>Shell</strong> : This is the Command Line Interface for the User to interact with OS.</p>
-<p><strong>Applications</strong> : On top of all these layers, many applications are situated. File system are also situated here.</p>
+<li><p>Generally Vim Editor is used to edit the files present in the linux system. By default Ubuntu Linux distros have Vim Editor installed on it. But centos Os doesn’t have Vim editor installed on it. To install vim editor in centos we need to use te following syntax :</p>
+<p><strong>Syntax</strong> : <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">yum</span> <span class="pre">install</span> <span class="pre">vim</span> <span class="pre">-y</span></code></p>
 </li>
-<li><p>Linux distributions we have today are combination of Linux Kernal + GNU Utilities + Some Customized applications created by some organization for their specific use cases.</p></li>
+<li><p>To open a file in Vim Editor then we use the following syntax.</p>
+<p><strong>Syntax</strong> : <code class="docutils literal notranslate"><span class="pre">vim</span> <span class="pre">&lt;filename&gt;</span></code></p>
+<p><strong>Ex</strong> : <code class="docutils literal notranslate"><span class="pre">vim</span> <span class="pre">testfile1.txt</span></code></p>
+</li>
 </ul>
-</section>
-<section id="core-linux-principles">
-<h2>Core Linux Principles<a class="headerlink" href="#core-linux-principles" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p><strong>Everything is a File</strong></p>
-<ol class="arabic simple">
-<li><p>In Linux, almost everything (devices, directories, processes, etc.) is treated as a file.</p></li>
-<li><p>This unifying abstraction simplifies interactions with hardware and software components.</p></li>
-<li><p><strong>Ex</strong> :</p>
+<section id="modes-of-vim-editor">
+<h2>Modes of Vim Editor<a class="headerlink" href="#modes-of-vim-editor" title="Link to this heading">#</a></h2>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">/dev</span></code> contains device files for hardware like disks and terminals.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">/proc</span></code> provides process and system information as files.</p></li>
-</ul>
-</li>
-</ol>
-</li>
-<li><p><strong>Small, Simple and Modular Programs</strong></p>
+<li><p>Vim editor has 3 modes. Those are :</p>
 <ol class="arabic simple">
-<li><p>Linux utilities and commands are designed to do one task and do it well.</p></li>
-<li><p>Programs are kept small and focused, promoting modularity and composability.</p></li>
-<li><p><b> Ex </b> : Instead of a monolithic tool, Linux offers separate utilities like grep, awk, sed, and cat for text processing. Monolithic simply implies only single code base used for all the tasks. Non- Monolothic means seperate files are there for respective tasks which is actually linux.</p></li>
+<li><p>Command Mode</p></li>
+<li><p>Insert Mode</p></li>
+<li><p>Extended Command mode.</p></li>
 </ol>
 </li>
-<li><p><strong>Text is the Universal Interface</strong></p>
+<li><p>When you run <code class="docutils literal notranslate"><span class="pre">vim</span> <span class="pre">testfile1.txt</span></code> then it will open that file in command mode initially. When you are in command move you cannot do anything. If you want to write something in that file then you have move into insert mode. To move into insert mode you just press <code class="docutils literal notranslate"><span class="pre">i</span></code> in the keyboard. Then You can see <code class="docutils literal notranslate"><span class="pre">--INSERT--</span></code> at the bottom of the file which indicates you are in insert mode, now you can start write anything in that file. Once you have written whatever you want in that file then click <code class="docutils literal notranslate"><span class="pre">esc</span></code> button in the keyboard which take back you to command mode. Now to move to extended command mode then you to press colon (<code class="docutils literal notranslate"><span class="pre">:</span></code>) on the keyboard. Now a colon (<code class="docutils literal notranslate"><span class="pre">:</span></code>) is displayed at the bottom of the file which indicates you are in extended command mode. Extended command mode is generally used to save and quit from the file.</p></li>
+<li><p>We have some operations which we can perform in extended command mode. Those are :</p>
 <ol class="arabic simple">
-<li><p>Text-based communication is preferred for input, output, and configuration.</p></li>
-<li><p>Files, logs, and settings are typically stored as plain text, making them easy to read, edit, and process.</p></li>
-<li><p><b> Ex </b> : Configuration files like /etc/passwd are simple text files.</p></li>
+<li><p><strong>Esc+ :w</strong> : This is used to save the changes.</p></li>
+<li><p><strong>Esc+ :q</strong> : This is used to quit from the file.</p></li>
+<li><p><strong>Esc+ :wq</strong> : To save and quit.</p></li>
+<li><p><strong>Esc+ :w!</strong> : To save forcefully.</p></li>
+<li><p><strong>Esc+ :q!</strong> : To quit forcefully.</p></li>
+<li><p><strong>Esc+ :wq!</strong> : To save and quit forcefully.</p></li>
+<li><p><strong>Esc+ :se nu</strong> : To set line numbers in the file.</p></li>
+<li><p><strong>Esc+ :set nonu</strong> : To remove the set line numbers in the file.</p></li>
+<li><p><strong>Esc+ :x</strong> : To save and quit the file.</p></li>
+<li><p><strong>Esc+ :x!</strong> : To save and quit the file forcefully.</p></li>
 </ol>
-</li>
-<li><p><strong>Open Source Collaboration</strong></p>
-<ol class="arabic simple">
-<li><p>Linux is developed under the principles of open-source software.</p></li>
-<li><p>The source code is freely available, encouraging transparency, collaboration, and community contributions.</p></li>
-<li><p>Ensures security through peer review and rapid bug fixing.</p></li>
-</ol>
-</li>
-<li><p><strong>Security and User Permissions</strong></p>
-<ol class="arabic simple">
-<li><p>Security is a core principle, with strict access control mechanisms.</p></li>
-<li><p>Files and resources are assigned ownership and permissions (read, write, execute) for three categories: owner, group, and others.</p></li>
-<li><p>Principle of least privilege ensures that users and processes have only the permissions they need.</p></li>
-</ol>
-</li>
-<li><p><strong>Interoperability and Composability</strong></p>
-<ol class="arabic simple">
-<li><p>Linux tools are designed to work together, allowing users to combine them to perform complex tasks.</p></li>
-<li><p>The output of one program can be used as the input for another via <b>pipes (|)</b>.</p></li>
-<li><p><b>Ex</b> : cat file.txt | grep “search” | sort | uniq</p></li>
-</ol>
-</li>
-<li><p><strong>Flexibility and Customization</strong></p>
-<ol class="arabic simple">
-<li><p>Linux is highly customizable, from the kernel to the user interface.</p></li>
-<li><p>Users can build and modify their systems to suit specific needs, choosing components like window managers, shells, and tools.</p></li>
-</ol>
-</li>
-<li><p><strong>Portability</strong></p>
-<ol class="arabic simple">
-<li><p>Linux is designed to run on a wide range of hardware architectures, from embedded systems to supercomputers.</p></li>
-<li><p>Code written for Linux is highly portable across different platforms.</p></li>
-</ol>
-</li>
-<li><p><strong>Community Over Corporation</strong></p>
-<ol class="arabic simple">
-<li><p>Linux prioritizes the needs of its community of users and developers over corporate interests.</p></li>
-<li><p>Development is driven by collaboration and meritocracy.</p></li>
-</ol>
+<p><strong>Note</strong> : Actually we will be in extended command mode only after we click <code class="docutils literal notranslate"><span class="pre">Esc+</span> <span class="pre">:</span></code>. So from above you just use those symbols after colon to do respective tasks. But for full syntax i have written like that.</p>
 </li>
 </ul>
 </section>
-<section id="advantages-of-linux">
-<h2>Advantages of Linux<a class="headerlink" href="#advantages-of-linux" title="Link to this heading">#</a></h2>
+<section id="some-more-operations-that-you-can-perform-on-vim-editor">
+<h2>Some more operations that you can perform on Vim Editor<a class="headerlink" href="#some-more-operations-that-you-can-perform-on-vim-editor" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>OpenSource</p></li>
-<li><p>Community Support</p></li>
-<li><p>Heavily Customizable</p></li>
-<li><p>Most Servers Runs on Linux</p></li>
-<li><p>DevOps most of the tools implements on Linux only</p></li>
-<li><p>Automation</p></li>
-<li><p>Secure</p></li>
-</ul>
-</section>
-<section id="different-linux-distributions">
-<h2>Different Linux Distributions<a class="headerlink" href="#different-linux-distributions" title="Link to this heading">#</a></h2>
-<ul>
-<li><p><strong>Popular Desktop Linux Os</strong></p>
-<ol class="arabic simple">
-<li><p>Ubuntu Linux</p></li>
-<li><p>Linux Mint</p></li>
-<li><p>Arch Linux</p></li>
-<li><p>Fedora</p></li>
-<li><p>Debian</p></li>
-<li><p>OpenSuse</p></li>
-</ol>
-</li>
-<li><p><strong>Popular Server Linux OS</strong></p>
-<ol class="arabic simple">
-<li><p>Red Hat Enterprise Linux</p></li>
-<li><p>Ubuntu Server</p></li>
-<li><p>CentOS</p></li>
-<li><p>SUSE Enterprise Linux</p></li>
-</ol>
-</li>
-<li><p>Today IT Industry, there are only two types of popular linux distros are used. Those are RPM(Red Hat Package Manager) and Debian. The key differences are :</p>
-<p><strong>RPM</strong> : It uses RPM package format (.rpm files) and its package management tools are <code class="docutils literal notranslate"><span class="pre">dnf</span></code>,<code class="docutils literal notranslate"><span class="pre">yum</span></code> and <code class="docutils literal notranslate"><span class="pre">rpm</span></code>. It is basically derived from Red Hat Enterprise Linux (RHEL). Some of RPM distros are RHEL and Centos, Fedora, OpenSUSE</p>
-<p><strong>Debian</strong> : It uses debian package format (.deb files) and its package management tools are <code class="docutils literal notranslate"><span class="pre">apt</span></code>, <code class="docutils literal notranslate"><span class="pre">apt-get</span></code> and <code class="docutils literal notranslate"><span class="pre">dpkg</span></code>. It is basically derived from Debian. Some of debian distros are Ubuntu Server, Debian, Linux Mint, Kali Linux.</p>
-</li>
+<li><p><strong>gg</strong> : To go to begining of the page.</p></li>
+<li><p><strong>G</strong> : To go to end of the page. (In windows for Capital G use <code class="docutils literal notranslate"><span class="pre">Shift+g</span></code>)</p></li>
+<li><p><strong>w</strong> : To move the cursor forward, word by word.</p></li>
+<li><p><strong>b</strong> : To move the cursor backword, word by word.</p></li>
+<li><p><strong>nw</strong> : To move cursor forward to n words . Ex : click <code class="docutils literal notranslate"><span class="pre">2+w</span></code> for moving 2 words forward.</p></li>
+<li><p><strong>nb</strong> : To move cursor backword to n words.</p></li>
+<li><p><strong>u</strong> : To undo the last change (it will do in word level only.)</p></li>
+<li><p><strong>U</strong> : To undo the previous changes (It will undo entire line).</p></li>
+<li><p><strong>yy</strong> : To copy a line where cursor is pointed out.</p></li>
+<li><p><strong>nyy</strong> : To copy n line from the current line. Ex : 4yy which copies 4 lines from the current line where cursor is pointed now.</p></li>
+<li><p><strong>p</strong> : To paste line below the cursor position.</p></li>
+<li><p><strong>P</strong> : To paste the line above the cursor position.</p></li>
+<li><p><strong>dd</strong> : To delete the entire line. It actually cuts the line where cursor is pointed out, so that you can paste wherever you want it.If you want to delete that line then just don’t paste it once you deleted.</p></li>
+<li><p><strong>ndd</strong> : To delete n no of line from cursor position.</p></li>
+<li><p><strong>/</strong> : Search a word in the file.</p></li>
 </ul>
 </section>
 </section>
@@ -550,22 +470,13 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Virtualization_And_VM_Setup.html"
+       href="Basic_Commands_Of_Linux.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Virtualization and VM Setup</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="Basic_Commands_Of_Linux.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">Basic Commands Of Linux</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -584,11 +495,8 @@
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#history-of-linux">History of Linux</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#architecture-of-linux">Architecture of Linux :</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#core-linux-principles">Core Linux Principles</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#advantages-of-linux">Advantages of Linux</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#different-linux-distributions">Different Linux Distributions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modes-of-vim-editor">Modes of Vim Editor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#some-more-operations-that-you-can-perform-on-vim-editor">Some more operations that you can perform on Vim Editor</a></li>
 </ul>
   </nav></div>
 

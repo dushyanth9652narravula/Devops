@@ -7,3 +7,5 @@ chapters:
 - file: Tools_Setup
 - file: Virtualization_And_VM_Setup
 - file: Linux
+- file: Basic_Commands_Of_Linux
+- file: Vim_Editor
